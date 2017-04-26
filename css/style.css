@@ -1,0 +1,160 @@
+*{margin: 0; padding: 0;}
+html, body{
+	width: 100%;
+	max-width: 100%;
+	background-color: #e7e7e7;
+	padding: 25px 0;
+}
+.container{
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	background-color: white;
+}
+
+h1,h2,h3,h4,h5,h6{text-align: center !important;}
+h1,h2{padding: 60px 0}
+h3,h4,h5,h6{padding: 20px 0}
+
+
+.flex-container{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.flex-item{
+	background: tomato;
+	padding: 5px;
+	width: 200px;
+	height: 150px;
+	margin: 10px 0;
+	
+	line-height: 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
+}
+
+.flex-container-dyno{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: flex-end;
+}
+
+.flex-container-dyno .flex-item{
+	margin: 10px 3px;
+	border: 3px solid tomato;
+}
+
+.add-flex{
+	background: white !important;
+	border: 3px dashed tomato !important;
+	color: tomato;
+}
+.add-flex:hover{
+	background: tomato !important;
+	border: 3px solid transparent;
+	color: white;
+	cursor: pointer;
+}
+
+.buttons-flex{
+	padding: 0;
+	margin: 20px auto;
+	list-style: none;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: center;
+}
+
+.buttons-flex button{
+	margin: 0;
+	margin-top: 10px;
+	background-color: #e7e7e7;
+	border: 2px solid #777;
+	border-left: 1px solid #777;
+	border-right: 1px solid white;
+	padding: 10px;
+}
+
+.buttons-flex button:hover{
+	background-color: white;
+	color: tomato;
+	cursor: pointer;	
+}
+
+.buttons-flex button.active{
+	border: 2px solid tomato;
+	color: tomato;
+	background-color: white;
+}
+
+.buttons-flex button.active:hover{
+	cursor: default;
+}
+
+.buttons-flex button:first-child{
+	border-left: 2px solid #777;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px; 
+}
+
+.buttons-flex button:last-child{
+	border-right: 2px solid #777;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
+.buttons-flex button.active:last-child{
+	border-right: 2px solid tomato;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
+.buttons-flex button.active:first-child{
+	border-left: 2px solid tomato;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+
+.flex-container-dyno-align{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+}
+
